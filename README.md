@@ -1,6 +1,7 @@
 # BTLyThuyet5-5
 # Chương trình gửi và nhận mail thông qua gmail có hỗ trợ truyền file - fileType: text (txt, doc, rtf, pdf, ...)
-# - Đăng nhập thành công với tài khoản gmail
+- Đăng nhập thành công với tài khoản gmail
+
 
 - Có chức năng soạn thảo email và đính kèm file khi gửi mail.
 
