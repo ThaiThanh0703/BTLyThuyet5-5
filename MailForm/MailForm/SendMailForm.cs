@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MailForm
 {
-    public partial class MainForm : Form
+    public partial class SendMailForm : Form
     {
-        public MainForm()
+        public SendMailForm()
         {
             InitializeComponent();
         }

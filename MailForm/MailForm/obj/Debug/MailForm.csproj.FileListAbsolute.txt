@@ -1,0 +1,13 @@
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\bin\Debug\MailForm.exe.config
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\bin\Debug\MailForm.exe
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\bin\Debug\MailForm.pdb
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\obj\Debug\MailForm.csproj.AssemblyReference.cache
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\obj\Debug\MailForm.csproj.SuggestedBindingRedirects.cache
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\obj\Debug\MailForm.Properties.Resources.resources
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\obj\Debug\MailForm.SendMailForm.resources
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\obj\Debug\MailForm.csproj.GenerateResource.cache
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\obj\Debug\MailForm.csproj.CoreCompileInputs.cache
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\obj\Debug\MailForm.exe
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\obj\Debug\MailForm.pdb
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\obj\Debug\MailForm.ReceiveMailForm.resources
+E:\UIT\năm 2\hk-4\LT mang Can ban\TH\BTLythuyet5-5\MailForm\MailForm\obj\Debug\MailForm.DieuHuong.resources
