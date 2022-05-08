@@ -6,6 +6,7 @@
 - Có chức năng soạn thảo email và đính kèm file khi gửi mail.
 
 - Có chức năng xem hộp thư đến (danh sách các email tài khoản nhận được). Chọn và xem nội dung, attachment của các email đến.
+- Chức năng đọc mail các nhóm tự chọn giao thức POP3/IMAP
 
 - gmail smtp server: smtp.gmail.com port 587/465
 
@@ -15,4 +16,3 @@
 
 - Sử dụng SmtpClient, System.Net.Mail.Attachment để kèm attachment
 
-- Chức năng đọc mail các nhóm tự chọn giao thức POP3/IMAP
