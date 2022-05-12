@@ -39,6 +39,7 @@
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnAddFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSend
@@ -142,6 +143,16 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Subject";
             // 
+            // btnAddFile
+            // 
+            this.btnAddFile.Font = new System.Drawing.Font("Rockwell Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFile.Location = new System.Drawing.Point(548, 56);
+            this.btnAddFile.Name = "btnAddFile";
+            this.btnAddFile.Size = new System.Drawing.Size(98, 50);
+            this.btnAddFile.TabIndex = 0;
+            this.btnAddFile.Text = "Add File";
+            this.btnAddFile.UseVisualStyleBackColor = true;
+            // 
             // SendMailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -157,6 +168,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAddFile);
             this.Controls.Add(this.btnSend);
             this.Name = "SendMailForm";
             this.Text = "Send Mail";
@@ -178,6 +190,7 @@
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnAddFile;
     }
 }
 

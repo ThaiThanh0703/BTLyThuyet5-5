@@ -45,6 +45,7 @@
             this.tbPassword.Font = new System.Drawing.Font("Rockwell Condensed", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPassword.Location = new System.Drawing.Point(96, 77);
             this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '=';
             this.tbPassword.Size = new System.Drawing.Size(430, 35);
             this.tbPassword.TabIndex = 10;
             // 
@@ -111,10 +112,12 @@
             // 
             this.lstMail.HideSelection = false;
             this.lstMail.Location = new System.Drawing.Point(9, 209);
+            this.lstMail.MultiSelect = false;
             this.lstMail.Name = "lstMail";
             this.lstMail.Size = new System.Drawing.Size(623, 254);
             this.lstMail.TabIndex = 14;
             this.lstMail.UseCompatibleStateImageBehavior = false;
+            this.lstMail.View = System.Windows.Forms.View.Tile;
             // 
             // lbTotalMail
             // 
