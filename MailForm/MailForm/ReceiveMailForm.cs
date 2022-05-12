@@ -18,15 +18,17 @@ namespace MailForm
         public ReceiveMailForm()
         {
             InitializeComponent();
-            lstMail.Columns.Add("Email", 135);
-            lstMail.Columns.Add("From", 200);
-            lstMail.Columns.Add("Time", 130);
-            lstMail.View = View.Details;
+            //lstMail.Columns.Add("Email", 135);
+            //lstMail.Columns.Add("From", 200);
+            //lstMail.Columns.Add("Time", 130);
+            //lstMail.View = View.Details;
+            
         }
-        
+        ImapClient rcvMail;
+        List<MailData> MailList;
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            using (ImapClient rcvMail= new ImapClient())
+            using ( rcvMail= new ImapClient())
             {
                 try
                 {
@@ -44,26 +46,54 @@ namespace MailForm
                 inbox.Open(MailKit.FolderAccess.ReadOnly);
                 lbTotalMail.Text=inbox.Count.ToString();
                 lbRecentMail.Text=inbox.Count.ToString();
+                MailList= new List<MailData>();
 
                 for (int i = 0; i < inbox.Count; i++)
                 {
-                    var message=inbox.GetMessage(i);
+                    MailList.Add(new MailData() {Email=inbox.GetMessage(i).Subject, From=inbox.GetMessage(i).From.ToString(),Date= inbox.GetMessage(i).Date.ToString(),ID=i ,content= inbox.GetMessage(i).TextBody.ToString() });
+                    
 
-                    ListViewItem name= new ListViewItem(message.Subject);
-                //    ListViewItem.ListViewSubItem from = new ListViewItem.ListViewSubItem(name, message.From.ToString());
-                    ListViewItem.ListViewSubItem date = new ListViewItem.ListViewSubItem(name, message.Date.ToString());
-                    name.SubItems.Add(message.From.ToString());
-                    name.SubItems.Add(date);
+                    ListViewItem name= new ListViewItem(MailList[i].ID.ToString());
+                    //    ListViewItem.ListViewSubItem from = new ListViewItem.ListViewSubItem(name, message.From.ToString());
+                    //    ListViewItem.ListViewSubItem date = new ListViewItem.ListViewSubItem(name, message.Date.ToString());
+                    name.SubItems.Add(MailList[i].Email);
+                    name.SubItems.Add(MailList[i].From);
+                    name.SubItems.Add(MailList[i].Date);
                     
                     lstMail.Items.Add(name);
 
                 }
 
-                rcvMail.Disconnect(true);
+               // rcvMail.Disconnect(true);
                 
             }
         }
 
       
+
+      
+
+      
+
+        private void lstMail_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                MessageBox.Show(MailList[(Convert.ToInt16(lstMail.SelectedItems[0].SubItems[0].Text))].content);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+        }
+    }
+    public class MailData
+    {
+        public string Email   { get; set; }
+        public string From    { get; set; }
+        public string Date    { get; set; }
+        public int    ID      { get; set; }
+        public string content { get; set; }
     }
 }

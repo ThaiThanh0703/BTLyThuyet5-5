@@ -51,6 +51,7 @@
             this.btnSend.TabIndex = 0;
             this.btnSend.Text = "SEND";
             this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // label1
             // 
@@ -152,6 +153,7 @@
             this.btnAddFile.TabIndex = 0;
             this.btnAddFile.Text = "Add File";
             this.btnAddFile.UseVisualStyleBackColor = true;
+            this.btnAddFile.Click += new System.EventHandler(this.btnAddFile_Click);
             // 
             // SendMailForm
             // 

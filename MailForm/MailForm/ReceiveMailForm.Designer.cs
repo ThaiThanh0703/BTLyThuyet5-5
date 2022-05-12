@@ -36,6 +36,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.lstMail = new System.Windows.Forms.ListView();
+            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.From = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lbTotalMail = new System.Windows.Forms.Label();
             this.lbRecentMail = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -110,6 +114,11 @@
             // 
             // lstMail
             // 
+            this.lstMail.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ID,
+            this.Email,
+            this.From,
+            this.Time});
             this.lstMail.HideSelection = false;
             this.lstMail.Location = new System.Drawing.Point(9, 209);
             this.lstMail.MultiSelect = false;
@@ -117,7 +126,29 @@
             this.lstMail.Size = new System.Drawing.Size(623, 254);
             this.lstMail.TabIndex = 14;
             this.lstMail.UseCompatibleStateImageBehavior = false;
-            this.lstMail.View = System.Windows.Forms.View.Tile;
+            this.lstMail.View = System.Windows.Forms.View.Details;
+           
+            this.lstMail.SelectedIndexChanged += new System.EventHandler(this.lstMail_SelectedIndexChanged);
+            // 
+            // ID
+            // 
+            this.ID.Text = "ID";
+            this.ID.Width = 30;
+            // 
+            // Email
+            // 
+            this.Email.Text = "Email";
+            this.Email.Width = 200;
+            // 
+            // From
+            // 
+            this.From.Text = "From";
+            this.From.Width = 250;
+            // 
+            // Time
+            // 
+            this.Time.Text = "Time";
+            this.Time.Width = 170;
             // 
             // lbTotalMail
             // 
@@ -172,5 +203,9 @@
         private System.Windows.Forms.ListView lstMail;
         private System.Windows.Forms.Label lbTotalMail;
         private System.Windows.Forms.Label lbRecentMail;
+        private System.Windows.Forms.ColumnHeader Email;
+        private System.Windows.Forms.ColumnHeader From;
+        private System.Windows.Forms.ColumnHeader Time;
+        private System.Windows.Forms.ColumnHeader ID;
     }
 }
